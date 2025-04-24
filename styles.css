@@ -18,6 +18,24 @@ nav a {
 nav a:hover {
   color:white;
 }
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between logo and text */
+  padding: 1rem;
+}
+
+.title-area h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.title-area .tagline {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+}
 
 body.home {
   background: linear-gradient(135deg, #e0eafc, #cfdef3);
