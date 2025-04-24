@@ -20,16 +20,20 @@ nav a:hover {
 }
 
 body.home {
-  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* soft blue gradient */
-}
-.centered-content {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.centered-content {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 200px);
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  text-align: center;
 }
+
 
 body.home h1 {
   font-size: 3rem;
