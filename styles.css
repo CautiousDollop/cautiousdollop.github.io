@@ -1,4 +1,3 @@
-/* Reset a few things */
 body, html {
   margin: 0;
   padding: 0;
@@ -20,13 +19,16 @@ nav a:hover {
   color:white;
 }
 
-/* Center content and style background/text */
 body.home {
-  /*display: flex;*/
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* soft blue gradient */
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* soft blue gradient */
+  height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
 }
 
 body.home h1 {
