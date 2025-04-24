@@ -22,7 +22,7 @@ nav a:hover {
 
 /* Center content and style background/text */
 body.home {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
   height: 100vh;
