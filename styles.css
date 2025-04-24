@@ -33,7 +33,7 @@ nav a:hover {
 
 .title-area {
   display: flex;
-  flex-directions: column;
+  flex-direction: column;
 }
 
 .title-area h1 {
