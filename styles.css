@@ -1,153 +1,17 @@
+For this what would you recommend as an unbiased opinion on what would be the nicest colour schemes?
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: sans-serif;
 }
-
-header, footer {
-  padding: 1rem;
-  color: white;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 1rem;
-  color: #333;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: white;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-content a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-.footer-content a:hover {
-  color: white;
-}
-
-/* Default (Light Mode: Misty Forest Theme) */
-body {
-  background: #f0f4f1; /* Soft misty greenish light background */
-  color: #333;
-  transition: background-color 0.3s, color 0.3s;
-}
-
 header {
-  background-color: #3e5e3f; /* Deep forest green */
+  padding:1rem;
+  background: #FDF5E6;
   color: white;
 }
-
 footer {
-  background-color: #3e5e3f;
-  color: white;
-}
-
-footer a {
-  color: #a6d1a0; /* Soft light green */
-}
-
-footer a:hover {
-  color: white;
-}
-
-nav a {
-  color: #3e5e3f; /* Deep forest green */
-}
-
-/* Dark Mode: Muted Twilight Theme */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #2e3a46; /* Muted twilight dark background */
-    color: #e0e0e0; /* Lighter text for dark mode */
-  }
-
-  header {
-    background-color: #2b3a42;
-    color: white;
-  }
-
-  footer {
-    background-color: #2b3a42;
-    color: white;
-  }
-
-  footer a {
-    color: #8fa7b7;
-  }
-
-  footer a:hover {
-    color: white;
-  }
-
-  nav a {
-    color: #8fa7b7;
-  }
-}
-
-.centered-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #333;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-h1 a {
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* KroFly stuff */
-.krofly .branding {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: left;
-  justify-content: start;
-}
-
-.krofly .title-area {
-  display: flex;
-  flex-direction: column;
-}
-
-.krofly .title-area h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #333;
-}
-
-.krofly .title-area .tagline {
-  font-style: italic;
-  color: #333;
-  margin-top: 0.50rem;
-  margin-left: 40ch;
-}
-
-/* Foot stuff */
-footer {
-  padding: 1rem;
+  padding:1rem;
   background: #FDF5E6;
   color: black;
 }
@@ -167,13 +31,75 @@ footer {
 .footer-content a:hover {
   color: white;
 }
-
 nav a {
   margin: 0 1rem;
   color: #333;
-  text-decoration: none;
+  text-decoration:none;
+}
+nav a:hover {
+  color:white;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  justify-content: start;
 }
 
-nav a:hover {
-  color: white;
+.title-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-area h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.title-area .tagline {
+  font-style: italic;
+  color: #333;
+  margin-top: 0.50rem;
+  margin-left: 40ch;
+}
+
+
+body.home {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body.home h1 {
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+body.krofly {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.krofly h1 {
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+body.krofly .tagline {
+  font-style:italic;
+  color: #555;
+  margin-top: -10px;
 }
