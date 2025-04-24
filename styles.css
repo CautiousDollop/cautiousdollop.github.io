@@ -6,20 +6,19 @@ body, html {
 }
 header {
   padding:1rem;
-  background: #7FFFD4;
+  background: #F0F8FF;
   color: white;
 }
 footer {
   padding:1rem;
-  background: #222;
+  background: #F0F8FF	;
   color: white;
   text-align: center;
 }
 nav a {
   margin: 0 1rem;
-  color: #aaa;
+  color: #333;
   text-decoration:none;
-  text-align: center;
 }
 nav a:hover {
   color:white;
@@ -50,7 +49,7 @@ nav a:hover {
 }
 
 body.home {
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  background: #F0FFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
