@@ -6,12 +6,12 @@ body, html {
 }
 header {
   padding:1rem;
-  background: #FDF5E6;
+  background: #8FBC8F;
   color: white;
 }
 footer {
   padding:1rem;
-  background: #FDF5E6;
+  background: #8FBC8F;
   color: black;
 }
 
@@ -66,7 +66,7 @@ nav a:hover {
 
 
 body.home {
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  background: #3CB371;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
