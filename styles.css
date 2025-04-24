@@ -4,7 +4,12 @@ body, html {
   height: 100%;
   font-family: sans-serif;
 }
-header, footer {
+header {
+  padding:1rem;
+  background: #222;
+  color: white;
+}
+footer {
   padding:1rem;
   background: #222;
   color: white;
@@ -21,8 +26,14 @@ nav a:hover {
 .branding {
   display: flex;
   align-items: center;
-  gap: 1rem; /* space between logo and text */
-  padding: 1rem;
+  gap: 1rem;
+  text-align: left;
+  justify-content: start;
+}
+
+.title-area {
+  display: flex;
+  flex-directions: column;
 }
 
 .title-area h1 {
