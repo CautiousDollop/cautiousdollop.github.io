@@ -1,40 +1,60 @@
-body, html {
+/* Reset & Base */
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: sans-serif;
 }
+
+/* Page Layout Container */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
 header {
-  padding:1rem;
+  padding: 1rem;
   background: #3CB371;
   color: white;
 }
+
+/* Footer (Sticky to bottom) */
 footer {
-  padding:1rem;
+  padding: 1rem;
   background: #3CB371;
   color: black;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .footer-content a {
   color: black;
   text-decoration: none;
 }
+
 .footer-content a:hover {
   color: white;
 }
+
+/* Nav */
 nav a {
   margin: 0 1rem;
   color: #333;
-  text-decoration:none;
+  text-decoration: none;
 }
+
 nav a:hover {
-  color:white;
+  color: white;
 }
+
+/* Branding */
 .branding {
   display: flex;
   flex-direction: column;
@@ -43,6 +63,7 @@ nav a:hover {
   gap: 1rem;
   padding: 1rem 0;
 }
+
 @media (min-width: 600px) {
   .branding {
     flex-direction: row;
@@ -51,27 +72,37 @@ nav a:hover {
     text-align: left;
   }
 }
+
+/* Title */
 .title-area {
   display: flex;
   flex-direction: column;
 }
+
 .title-area h1 {
   margin: 0;
   font-size: 2rem;
   color: #333;
 }
+
 .title-area .tagline {
   font-style: italic;
   color: black;
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
+
+/* Homepage Styles */
 body.home {
   background: #8FBC8F;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
+
+body.home h1 {
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 .centered-content {
   flex: 1;
   display: flex;
@@ -79,41 +110,42 @@ body.home {
   justify-content: center;
   text-align: center;
 }
-body.home h1 {
-  font-size: 3rem;
-  color: #333;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
+
+/* FAQ / KroFly Page Styles */
 body.krofly {
   background: #8FBC8F;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
+
 body.krofly h1 {
   font-size: 3rem;
   color: #333;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
+
 body.krofly .tagline {
   font-style: italic;
   color: black;
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
+
 body.krofly .faq-container {
+  flex: 1;
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
-  }
+}
+
 body.krofly .faq-item {
   margin-bottom: 1.5rem;
 }
+
 body.krofly .faq-item h2 {
   font-size: 1.25rem;
   color: #333;
   margin-bottom: 0.5rem;
 }
+
 body.krofly .faq-item p {
   margin: 0;
   color: #444;
