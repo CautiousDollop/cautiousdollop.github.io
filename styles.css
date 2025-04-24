@@ -13,7 +13,22 @@ footer {
   padding:1rem;
   background: #FDF5E6;
   color: black;
-  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: white;
 }
 nav a {
   margin: 0 1rem;
