@@ -42,7 +42,18 @@ footer {
 .footer-content a:hover {
   color: white;
 }
-
+.step {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-buttom:1rem;
+  flex-wrap: wrap;
+}
+.step-img-one {
+  max-width:100 px;
+  height:auto;
+  border-radius:6px;
+}
 /* Nav */
 nav a {
   margin: 0 1rem;
