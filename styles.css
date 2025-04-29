@@ -110,6 +110,14 @@ body.home h1 {
   justify-content: center;
   text-align: center;
 }
+.blog-centered-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 /* FAQ / KroFly Page Styles */
 body.krofly {
