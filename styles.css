@@ -50,7 +50,7 @@ footer {
   flex-wrap: wrap;
 }
 .step-img-one {
-  max-width:100 px;
+  max-width:64 px;
   height:auto;
   border-radius:6px;
 }
