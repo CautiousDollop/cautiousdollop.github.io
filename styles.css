@@ -44,10 +44,8 @@ footer {
 }
 
 .logo-header {
-  height: 100%;
-  width: 100%;
-  max-height:128px;
-  max-width:128px;
+  height: 128px;
+  width: 128px;
 }
 
 .step {
