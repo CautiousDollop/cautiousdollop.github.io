@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terms of Service for KroFly</title>
+    <nav>
+        <a href="krofly.html">Return to KroFly page</a>
+    </nav>
+</head>
+<body>
+    <h1>Terms of Service for KroFly</h1>
+    <p><strong>Effective Date:</strong> 24/04/2025</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By using KroFly, you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
+
+    <h2>2. Use of the App</h2>
+    <p>KroFly is provided as-is for personal, non-commercial use. You agree not to misuse, reverse-engineer, or modify the app or attempt to interfere with its normal operation.</p>
+    <p>The app is intended to assist with general directional orientation and is not suitable for critical navigation, aviation, or emergency use.</p>
+
+    <h2>3. Location Services</h2>
+    <p>KroFly uses your device's GPS to calculate bearing and distance to a selected target. This data is processed locally and never shared with the developer.</p>
+    <p>You are responsible for ensuring GPS accuracy and proper conditions for use (e.g., outdoors, clear signal).</p>
+
+    <h2>4. Advertisements</h2>
+    <p>KroFly includes banner and optional ads provided by Google AdMob. These are subject to <a href="https://policies.google.com/terms" target="_blank">Google’s Terms of Service</a>.</p>
+
+    <h2>5. No Warranty</h2>
+    <p>This app is provided "as is" without warranties of any kind. The developer makes no guarantees about accuracy, availability, or reliability. Use at your own risk.</p>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>The developer is not liable for any direct or indirect damages resulting from the use or inability to use the app, including but not limited to location errors, data loss, or exposure to third-party content (e.g., ads).</p>
+
+    <h2>7. Changes to Terms</h2>
+    <p>These terms may be updated at any time. Continued use of the app after changes are posted constitutes your acceptance of the updated terms.</p>
+
+    <h2>8. Contact</h2>
+    <p>For questions or concerns about these Terms, you can contact:</p>
+    <p><strong>Email:</strong> <a href="mailto:cautiousdollop@protonmail.com">cautiousdollop@protonmail.com</a></p>
+</body>
+</html>
