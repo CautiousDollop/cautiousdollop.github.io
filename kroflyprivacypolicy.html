@@ -14,7 +14,7 @@
 
     <h2>1. Information Collection and Use</h2>
     <p>KroFly does <strong>not collect</strong>, <strong>store</strong>, or <strong>share</strong> any personal or usage data with the developer.</p>
-    <p>The app requests access to <strong>precise GPS location</strong> (<code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code>) strictly for functionality. This data is used <strong>only on-device</strong> to calculate direction and distance toward a selected target, including when the app is in the background, and is <strong>never stored or transmitted</strong> to the developer.</p>
+    <p>The app requests access to <strong>precise GPS location</strong> (<code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code>) for functionality. This data is used <strong>only on-device</strong> to calculate direction and distance toward a selected target when the app is actively in use (foreground). The app does <strong>not</strong> collect or store location data when it is in the background. This location data is <strong>never stored or transmitted</strong> to the developer.</p>
     <p>No analytics, crash reporting, or usage tracking is included in this version of the app.</p>
 
     <h2>2. Advertising</h2>
@@ -41,8 +41,11 @@
     <h2>5. Permissions</h2>
     <p>KroFly may request the following permissions for essential functionality:</p>
     <ul>
-        <li><strong>Location Access:</strong> Used solely for compass direction and distance functionality, including in the background.</li>
+        <li><strong>Location Access:</strong> Used solely for compass direction and distance functionality when the app is in use (foreground).</li>
+        <li><strong>Foreground Service Location:</strong> Used to allow location functionality while the app runs in the foreground.</li>
         <li><strong>Internet Access:</strong> Required only for displaying ads from AdMob.</li>
+        <li><strong>Network State:</strong> Used to check the network connection status for proper ad functionality.</li>
+        <li><strong>Foreground Service:</strong> Required to keep the app running in the foreground to use GPS location.</li>
     </ul>
     <p>No access is requested to your contacts, photos, camera, microphone, or device storage.</p>
 
