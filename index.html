@@ -30,6 +30,15 @@
       -El Keego Wuz Here
       <br>
     </p>
+    <div id="newsletter-container"></div>
+    <script>
+      fetch('newsletter.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('newsletter-container').innerHTML = html;
+        })
+        .catch(err => console.error('Newsletter load error:', err));
+    </script>
   </main>
 
   <footer>
