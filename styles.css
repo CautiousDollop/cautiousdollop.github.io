@@ -150,6 +150,22 @@ body.home h1 {
   max-width: 800px;
   margin: 0 auto;
 }
+.blog-post {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
 
 
 /* FAQ / KroFly Page Styles */
