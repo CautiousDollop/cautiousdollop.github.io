@@ -95,7 +95,7 @@ nav a:hover {
   }
 }
 
-#newsletter-container {
+.newsletter-container {
   margin-top: 2rem;
   padding: 1rem;
   background: #f9f9f9;
@@ -133,6 +133,16 @@ body.home h1 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+.intro-message p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
 .centered-content {
   flex: 1;
   display: flex;
