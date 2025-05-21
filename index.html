@@ -30,6 +30,7 @@
       -El Keego Wuz Here
       <br>
     </p>
+    <section id="blog-posts"></section>
     <div id="newsletter-container"></div>
     <script>
       fetch('newsletter.html')
@@ -48,5 +49,24 @@
     </div>
   </footer>
   </div>
+  <script>
+  fetch('posts.json')
+    .then(res => res.json())
+    .then(posts => {
+      const container = document.getElementById('blog-posts');
+      posts.forEach(post => {
+        const article = document.createElement('article');
+        article.className = 'blog-post';
+        article.innerHTML = `
+          <h2>${post.title}</h2>
+          <p><em>${post.date}</em></p>
+          <p>${post.content}</p>
+        `;
+        container.appendChild(article);
+      });
+    })
+    .catch(err => console.error('Error loading blog posts:', err));
+</script>
+
 </body>
 </html>
