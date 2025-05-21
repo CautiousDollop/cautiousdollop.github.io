@@ -1,12 +1,17 @@
 [
   {
-    "title": "First Log – 21 May 2025",
+    "title": "Introducing Myself",
     "date": "2025-05-21",
-    "content": "Reworking Everything... Under Construction"
+    "content" : "My name is Keegan and I'm from Canada. I've been an artist, musician, writer and cook, but now I'm starting my coding journey since I love making games and this will be where I keep projects and related information. I may sometimes include projects from other parts of my life. Thanks for stopping by."
+  },
+    {
+    "title": "Second Dev Log - 21 May 2025",
+    "date": "2025-05-21",
+    "content": "KroFly Magic Compass app is now in closed testing, if you'd like to participate please send an email to cautiousdollop@protonmail.com"
   },
   {
-    "title": "Testing Post Zero",
+    "title": "First Dev Log – 21 May 2025",
     "date": "2025-05-21",
-    "content": "If you see this, it works"
-  }
+    "content": "Current Projects are the KroFly App, a game called Bubble&Squeak, and a few other things slowly being worked on, but not worth mentioning yet. I will slowly update the status and addition of projects through these dev logs for the time being."
+  },
 ]
