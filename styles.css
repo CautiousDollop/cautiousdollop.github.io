@@ -32,7 +32,23 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #ccc;
 }
+.footer-content span {
+  flex:1;
+}
+.footer-left {
+  text-align:left;
+}
+.footer-center {
+  text-align:center;
+}
+.footer-right {
+  text-align:right;
+}
+
 
 .footer-content a {
   color: black;
