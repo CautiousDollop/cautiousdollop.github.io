@@ -6,67 +6,83 @@
   <title>Cautious Dollop</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-  
+
 <body class="home">
   <div class="page-wrapper">
-  <header>
-    <div class="branding">
-      <img src="PixelStacheLogoPNG.png" width="128" height="128" alt="CautiousStache Logo">
-      <div class="title-area">
-        <h1>Cautious Dollop's Mothership</h1>
-        <p class="tagline"><em>R. Keegan Connor</em></p>
-      </div>
-    </div>    
-    <nav>
-      <a href="index.html"><strong>Homepage</strong></a>
-      <a href="krofly.html"><strong>KroFly App</strong></a>
-      <a href="game.html"><strong>Unnamed Game</strong></a>
-    </nav>
-  </header>
-  <main class="centered-content">
-    <p>
-      Website still in progress
-      <br>
-      -El Keego Wuz Here
-      <br>
-    </p>
-    <section id="blog-posts"></section>
-    <div id="newsletter-container"></div>
-    <script>
-      fetch('newsletter.html')
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById('newsletter-container').innerHTML = html;
-        })
-        .catch(err => console.error('Newsletter load error:', err));
-    </script>
-  </main>
 
-  <footer>
-    <div class="footer-content">
-      <span>&copy; 2025 R. Keegan Connor</span>
-      <span><a href="mailto:cautiousdollop@protonmail.com">cautiousdollop@protonmail.com</a></span>
-    </div>
-  </footer>
+    <!-- ======= HEADER ======= -->
+    <header>
+      <div class="branding">
+        <img src="PixelStacheLogoPNG.png" width="128" height="128" alt="CautiousStache Logo" />
+        <div class="title-area">
+          <h1>Cautious Dollop's Mothership</h1>
+          <p class="tagline"><em>R. Keegan Connor</em></p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><strong>Homepage</strong></a>
+        <a href="krofly.html"><strong>KroFly App</strong></a>
+        <a href="game.html"><strong>Bubble&Squeak</strong></a>
+      </nav>
+    </header>
+
+    <!-- ======= MAIN CONTENT ======= -->
+    <main class="centered-content">
+      <p>
+        Website still in progress
+        <br />
+        -El Keego Wuz Here
+        <br />
+      </p>
+
+      <!-- Blog posts will load here -->
+      <section id="blog-posts" class="blog-posts"></section>
+
+      <!-- Newsletter will load here -->
+      <div id="newsletter-container"></div>
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer>
+      <div class="footer-content">
+        <span>&copy; 2025 R. Keegan Connor</span>
+        <span>
+          <a href="mailto:cautiousdollop@protonmail.com">cautiousdollop@protonmail.com</a>
+        </span>
+      </div>
+    </footer>
+
   </div>
+
+  <!-- ======= BLOG SCRIPT ======= -->
   <script>
-  fetch('posts.json')
-    .then(res => res.json())
-    .then(posts => {
-      const container = document.getElementById('blog-posts');
-      posts.forEach(post => {
-        const article = document.createElement('article');
-        article.className = 'blog-post';
-        article.innerHTML = `
-          <h2>${post.title}</h2>
-          <p><em>${post.date}</em></p>
-          <p>${post.content}</p>
-        `;
-        container.appendChild(article);
-      });
-    })
-    .catch(err => console.error('Error loading blog posts:', err));
-</script>
+    fetch('posts.json')
+      .then(res => res.json())
+      .then(posts => {
+        const container = document.getElementById('blog-posts');
+        posts.forEach(post => {
+          const article = document.createElement('article');
+          article.className = 'blog-post';
+          article.innerHTML = `
+            <h2>${post.title}</h2>
+            <p><em>${post.date}</em></p>
+            <p>${post.content}</p>
+          `;
+          container.appendChild(article);
+        });
+      })
+      .catch(err => console.error('Error loading blog posts:', err));
+  </script>
+
+  <!-- ======= NEWSLETTER SCRIPT ======= -->
+  <script>
+    fetch('newsletter.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('newsletter-container').innerHTML = html;
+      })
+      .catch(err => console.error('Newsletter load error:', err));
+  </script>
 
 </body>
 </html>
